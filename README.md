@@ -34,6 +34,9 @@
 	$tool->redirect('https://github.com'); // Redirects the user to the address contained in the string
 
 	$tool->open('https://github.com'); // Opens a new window at the indicated address
+	
+	// You can use the methods of the Tools class without instantiating the class
+	Tools::alert("Hello World!");
 ~~~
 
 ### Data

@@ -43,6 +43,8 @@
 ~~~php
 	$data = new Data(); // If no parameters are passed to the constructor, the default time zone will be 'America / Sao_Paulo'. Pass the desired PHP-compatible time zone into the builder
 	echo $data->show('d/m/Y'); // Returns the current date 20/01/2021
+	
+	echo Data::show('d/m/Y'); // If it is not necessary to change the default time zone, you can call the show method as static
 ~~~
 
 ### Connect 

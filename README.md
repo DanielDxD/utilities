@@ -23,6 +23,9 @@
 
 	// RG validation
 	$valid->valid_rg('21.854.930-1'); // Return true
+	
+	// CPF validation with static method
+	Validate::valid_cpf('123.456.789-09'); // Return false
 
 ~~~
 

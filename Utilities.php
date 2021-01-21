@@ -1,6 +1,6 @@
 <?php
 	class Validate {
-		function valid_cpf(string $cpf){
+		public static function valid_cpf(string $cpf){
 			$a = intval($cpf[0]);
 			$b = intval($cpf[1]);
 			$c = intval($cpf[2]);
@@ -34,7 +34,7 @@
 				return false;
 			}
 		}
-		function valid_cnpj($cnpj){
+		public static function valid_cnpj($cnpj){
 			// AB.CDE.FGH/IJKL-MN
 			$a = intval($cnpj[0]);
 			$b = intval($cnpj[1]);
@@ -70,7 +70,7 @@
 				return false;
 			}
 		}
-		function valid_rg($rg){
+		public static function valid_rg($rg){
 			// AB.CDE.FGH-I
 			$a = intval($rg[0]);
 			$b = intval($rg[1]);

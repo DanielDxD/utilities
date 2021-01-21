@@ -119,7 +119,7 @@
 		function __construct(string $timezone = 'America/Sao_Paulo'){
 			date_default_timezone_set($timezone);
 		}
-		function show($format){
+		public static function show($format){
 			return date($format);
 		}
 	}
